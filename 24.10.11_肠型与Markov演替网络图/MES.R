@@ -84,7 +84,8 @@ s.class(obs.pcoa$li, fac=as.factor(data.cluster), grid=F,sub="Principal coordian
 cls_data = data.frame(sample = colnames(data),cluster = data.cluster)
 write.csv(cls_data,"sample_cluster.csv")
 #Uncomment next two lines if R packages are already installed
-#install.packages("phyloseq")
+#source('http://bioconductor.org/biocLite.R')
+#biocLite('phyloseq')
 #install.packages("igraph")
 #install.packages("markovchain")
 library(phyloseq)
